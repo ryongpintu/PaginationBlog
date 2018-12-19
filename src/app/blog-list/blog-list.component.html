@@ -1,0 +1,12 @@
+<p>
+  blog-list works!
+</p>
+
+<button [routerLink]="['post']">Add new Blog</button>
+
+All blogs
+<app-blog-item *ngFor="let eachBlog of allBlogs" [details]="eachBlog"></app-blog-item>
+
+
+
+<router-outlet></router-outlet>
